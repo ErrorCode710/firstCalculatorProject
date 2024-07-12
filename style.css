@@ -1,0 +1,105 @@
+:root {
+  --primary-color: #212327;
+  --secondary-color: #27292e;
+  --tertiary-color: #323438;
+
+  /*Light Mode */
+  --clr-1: #f5f5f5;
+  --clr-2: #f2f2f2;
+
+  /* font Color */
+  --font-color: #fff;
+  /* Gradient  */
+  /* Font Family */
+  --ff-1: "Arimo", sans-serif;
+  /* Font Weight */
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fs-normal: 1.25rem;
+  --fs-big: 3rem;
+}
+body {
+  font-family: var(--ff-1);
+  background-color: #212327;
+  color: #fff;
+  display: grid;
+  place-content: center;
+  min-height: 100svh;
+}
+
+.wrapper {
+  display: grid;
+  gap: 1rem;
+  max-width: 20rem;
+  /* border: 3px solid #1a1c1f;
+  border-radius: 1rem; */
+}
+
+.section {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--secondary-color);
+}
+
+.section__panel {
+  text-align: right;
+}
+
+.section__interaction {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  justify-content: center;
+  align-content: center;
+}
+.span {
+  grid-row: auto / span 2;
+
+  height: auto !important;
+}
+
+.button-appearance {
+  background-color: var(--tertiary-color);
+  color: var(--font-color);
+  border: none;
+  border-radius: 2rem;
+  width: 4rem;
+  height: 4rem;
+  font-size: var(--fs-normal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Gradient */
+.appearance-gradient {
+  background: linear-gradient(#ed0e98, #fe5a2d);
+}
+
+.button-appearance:hover {
+  background-color: #44484d;
+  cursor: pointer;
+}
+.calculation {
+  max-width: 17.2rem;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: var(--fs-normal);
+}
+.svg-icon {
+  fill: var(--font-color);
+  stroke: white;
+}
+
+.gradient-text {
+  font-size: 1.3rem;
+  background-image: linear-gradient(#ed0e98, #fe5a2d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

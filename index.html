@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <section class="section section__panel">
+          <!-- <p class="calculation" id="display">120 x 3 + 608 + 1080</p> -->
+          <p class="calculation" id="display">0</p>
+          <h1 class="result" id="totalCalculation">0</h1>
+          <!-- <h1 class="result" id="totalCalculation">2048</h1> -->
+        </section>
+        <section class="section section__interaction">
+          <div class="grid-container">
+            <button class="button-appearance" id="appearanceMode">
+              <img src="img/Group_58.png" class="svg-icon" alt="" />
+            </button>
+            <button class="button-appearance" id="multiplyButton">X</button>
+            <button class="button-appearance" id="divideButton">/</button>
+            <button class="button-appearance" id="backSpaceButton">←</button
+            ><button class="button-appearance" id="numberButton7">7</button
+            ><button class="button-appearance" id="numberButton8">8</button
+            ><button class="button-appearance" id="numberButton9">9</button
+            ><button class="button-appearance" id="subtractButton">-</button
+            ><button class="button-appearance" id="numberButton4">4</button
+            ><button class="button-appearance" id="numberButton5">5</button
+            ><button class="button-appearance" id="numberButton6">6</button
+            ><button class="button-appearance" id="addButton">+</button
+            ><button class="button-appearance" id="numberButton1">1</button
+            ><button class="button-appearance" id="numberButton2">2</button
+            ><button class="button-appearance" id="numberButton3">3</button
+            ><button
+              class="button-appearance span appearance-gradient"
+              id="equalButton"
+            >
+              =</button
+            ><button class="button-appearance gradient-text" id="resetButton">
+              AC</button
+            ><button class="button-appearance" id="numberButton0">0</button
+            ><button class="button-appearance" id="decimalButton">.</button>
+            <!-- <button class="button-appearance">Hi</button> -->
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
